@@ -13,3 +13,5 @@ if __name__=='__main__':
     if DATA_INGESTION_COLLECTION_NAME in sd.mongo_client.database.list_collection_names():
         sd.mongo_client.database[DATA_INGESTION_COLLECTION_NAME].drop()
     sd.save_csv_file(file_path=data_file_path,collection_name=DATA_INGESTION_COLLECTION_NAME)
+
+
